@@ -20,8 +20,7 @@ type ProductPageType = {
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const pid = query.pid;
-  const res = await fetch(`${server}/api/product/${pid}`);
-  console.log(`${server}/api/product/${pid}`);
+  const res = await fetch(`https://milksolution-9b8g.vercel.app/api/product/${pid}`);
   
   const product = await res.json();
 

@@ -11,7 +11,7 @@ const Gallery = ({ images }: GalleryProductType) => {
       <div className="product-gallery__thumbs">
         {images.map((image,index) => (
           <div key={image} className="product-gallery__thumb" onClick={()=>setImage(index)}>
-            <img src={image} alt="" />
+            <img src='https://htindiatech.com/wp-content/uploads/2021/04/product_4.png' alt="" />
           </div>
         ))}
       </div>
